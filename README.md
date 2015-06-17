@@ -30,7 +30,7 @@ use \DrewM\Morse\Morse;
 
 if (Morse::featureExists('http/curl')) {
 	// use curl
-}else{
+} else {
 	// use sockets
 }
 ```
@@ -81,10 +81,10 @@ $best_match = Morse::getFirstAvailable(['image/gd', 'image/imagick']);
 or
 
 ```php
-$best_match = Morse::getFirstAvailable([
+$best_match = Morse::getFirstAvailable(array(
 					'image/gd' => 'gd', 
 					'image/imagick' => 'imagick'
-				]);
+				));
 
 switch($best_match) {
 
