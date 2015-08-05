@@ -6,6 +6,53 @@ class Morse
 	const CLASS_SUPPORT = 1;
 	const FUNCTION_SUPPORT = 2;
 
+    const FEATURE_CACHE_MEMCACHE = 'cache/memcache';
+    const FEATURE_CACHE_MEMCACHED = 'cache/memcached';
+    const FEATURE_CACHE_APC = 'cache/apc';
+    const FEATURE_CACHE_OPCACHE = 'cache/opcache';
+
+    const FEATURE_CRYPTO_MCRYPT = 'crypto/mcrypt';
+    const FEATURE_CRYPTO_OPENSSL = 'crypto/openssl';
+    const FEATURE_CRYPTO_PASSWORD = 'crypto/password';
+
+    const FEATURE_DB_MYSQLI = 'db/mysqli';
+    const FEATURE_DB_PDO = 'db/pdo';
+    const FEATURE_DB_PDO_MYSQL = 'db/pdo-mysql';
+    const FEATURE_DB_PDO_PGSQL = 'db/pdo-pgsql';
+    const FEATURE_DB_PDO_SQLITE = 'db/pdo-sqlite';
+
+    const FEATURE_FILE_FINFO = 'file/finfo';
+    const FEATURE_FILE_ZIP = 'file/zip';
+
+    const FEATURE_HTTP_CURL = 'http/curl';
+    const FEATURE_HTTP_FILTER = 'http/filter';
+    const FEATURE_HTTP_OPENSSL = 'http/openssl';
+    const FEATURE_HTTP_SOCKETS = 'http/sockets';
+
+    const FEATURE_IMAGE_GD = 'image/gd';
+    const FEATURE_IMAGE_IMAGICK = 'image/imagick';
+
+    const FEATURE_NUMBER_BIGINT = 'number/bigint';
+
+    const FEATURE_PROTOCOL_LDAP = 'protocol/ldap';
+
+    const FEATURE_STRING_CTYPE = 'string/ctype';
+    const FEATURE_STRING_ICONV = 'string/iconv';
+    const FEATURE_STRING_INTL = 'string/intl';
+    const FEATURE_STRING_JSON = 'string/json';
+    const FEATURE_STRING_MULTIBYTE = 'string/multibyte';
+    const FEATURE_STRING_TRANSLITERATE = 'string/transliterate';
+
+    const FEATURE_SYSTEM_EXEC = 'system/exec';
+    const FEATURE_SYSTEM_IGNORE_USER_ABORT = 'system/ignore-user-abort';
+    const FEATURE_SYSTEM_INI_SET = 'system/ini-set';
+    const FEATURE_SYSTEM_PASSTHRU = 'system/passthru';
+    const FEATURE_SYSTEM_POPEN = 'system/popen';
+    const FEATURE_SYSTEM_PROC_OPEN = 'system/proc-open';
+    const FEATURE_SYSTEM_SET_TIME_LIMIT = 'system/set-time-limit';
+    const FEATURE_SYSTEM_SHELL_EXEC = 'system/shell-exec';
+    const FEATURE_SYSTEM_SYSTEM = 'system/system';
+
 	/**
 	 * In-memory cache of disabled functions names.
 	 */

@@ -6,25 +6,25 @@ class HttpTest extends PHPUnit_Framework_TestCase
 {
 	public function testCurl()
 	{
-		$result = Morse::featureExists('http/curl');
+		$result = Morse::featureExists(Morse::FEATURE_HTTP_CURL);
 		$this->assertTrue($result===true || $result===false);
 	}
 
 	public function testSockets()
 	{
-		$result = Morse::featureExists('http/sockets');
+		$result = Morse::featureExists(Morse::FEATURE_HTTP_SOCKETS);
 		$this->assertTrue($result===true || $result===false);
 	}
 
 	public function testFilter()
 	{
-		$result = Morse::featureExists('http/filter');
+		$result = Morse::featureExists(Morse::FEATURE_HTTP_FILTER);
 		$this->assertTrue($result===true || $result===false);
 	}
 
 	public function testOpenssl()
 	{
-		$result = Morse::featureExists('http/openssl');
+		$result = Morse::featureExists(Morse::FEATURE_HTTP_OPENSSL);
 		$this->assertTrue($result===true || $result===false);
 	}
 }
