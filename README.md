@@ -69,6 +69,14 @@ switch(Morse::featureExists('file/finfo')) {
 }
 ```
 
+The names of the available feature detections are also available as a constant on the Morse class:
+
+```php
+if (Morse::featureExists(Morse::FEATURE_FILE_FINFO)) {
+	...
+}
+```
+
 If class support is found, this returns regardless of function support.
 
 

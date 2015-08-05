@@ -6,19 +6,19 @@ class CryptoTest extends PHPUnit_Framework_TestCase
 {
 	public function testOpenssl()
 	{
-		$result = Morse::featureExists('crypto/openssl');
+		$result = Morse::featureExists(Morse::FEATURE_CRYPTO_OPENSSL);
 		$this->assertTrue($result===true || $result===false);
 	}
 
 	public function testMcrypt()
 	{
-		$result = Morse::featureExists('crypto/mcrypt');
+		$result = Morse::featureExists(Morse::FEATURE_CRYPTO_MCRYPT);
 		$this->assertTrue($result===true || $result===false);
 	}
 
 	public function testPassword()
 	{
-		$result = Morse::featureExists('crypto/password');
+		$result = Morse::featureExists(Morse::FEATURE_CRYPTO_PASSWORD);
 		$this->assertTrue($result===true || $result===false);
 	}
 }
