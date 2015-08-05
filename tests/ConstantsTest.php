@@ -17,7 +17,7 @@ class ConstantsTest extends PHPUnit_Framework_TestCase
 
         $featureClasses = glob(dirname(__FILE__) . '/../src/Feature/*.php');
         foreach($featureClasses as $featureClass){
-            $methodClassName = strtolower(pathinfo($featureClass, PATHINFO_FILENAME));
+            $methodClassName = pathinfo($featureClass, PATHINFO_FILENAME);
             $methodClassId = strtolower($methodClassName);
 
             $feature = new ReflectionClass(sprintf('DrewM\Morse\Feature\\%s', $methodClassName));
