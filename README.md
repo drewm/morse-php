@@ -30,7 +30,7 @@ use \DrewM\Morse\Morse;
 
 if (Morse::featureExists('http/curl')) {
 	// use curl
-}else{
+} else {
 	// use sockets
 }
 ```
